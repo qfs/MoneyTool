@@ -18,14 +18,14 @@ public class MoneyToolTest {
 	public void testFormat() throws Exception {
 		final String result = tool.format(2312);
 
-		assertEquals("TLR 23,12",result);
+		assertEquals("23,12 ₮",result);
 	}
 
 	@Test
 	public void testFormatNull() throws Exception {
 		final String result = tool.format(0);
 
-		assertEquals("TLR 0,00",result);
+		assertEquals("0,00 ₮",result);
 	}
 
 }
